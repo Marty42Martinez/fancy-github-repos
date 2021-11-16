@@ -1,6 +1,7 @@
 {
   "name": "fancy-github-repos",
   "version": "0.1.0",
+  "main": "src/index.js",
   "private": true,
   "dependencies": {
     "react": "^16.14.0",
