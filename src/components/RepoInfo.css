@@ -1,0 +1,15 @@
+.Repository {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 12px;
+  padding: 12px;
+  font-size: small;
+}
+
+.Subtitle {
+  font-size: medium
+}

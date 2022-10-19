@@ -1,0 +1,11 @@
+.StarList {
+  display: flex;
+  flex-wrap:wrap;
+  margin: 12px;
+  justify-content: center;
+}
+
+.SectionTitle {
+  font-size: large;
+  margin: 12px;
+}

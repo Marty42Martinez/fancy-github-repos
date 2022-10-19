@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+import StarList from './components/StarList';
 
 function App() {
   return (
     <div className="App">
-      <span>Hello world!</span>
+      <div className='Title'>GitHub Repositories</div>
+      <StarList />
     </div>
   );
 }
