@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { fetchHighStarRepos } from '../services/repositoryService';
+import RepoInfo from './RepoInfo';
 
 export default function StarList() {
   const [highStarRepos, setHighStarRepos] = useState([]);
@@ -7,10 +8,12 @@ export default function StarList() {
     fetchHighStarRepos().then((results) => setHighStarRepos(results.items));
 
   }, [])
-  // Build ListItem components
-  console.log({highStarRepos});
   // Future state: React Query?
   return (
-    <div>Hello World!</div>
+    <>
+      {highStarRepos.map((repository) => (
+        <RepoInfo repoName={repository.name} starCount={repository.stargazers_count}/>
+      ))}
+    </>
   )
 }
